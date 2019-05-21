@@ -1,0 +1,418 @@
+2019-05-15T12:22:54.801Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-15T12:22:56.031Z - normal: Initializing Asset Database
+2019-05-15T12:22:56.074Z - normal: checking language setting...
+2019-05-15T12:22:56.074Z - normal: Language: zh
+2019-05-15T12:22:57.071Z - success: preview server running at http://localhost:7457
+2019-05-15T12:22:57.071Z - success: protocol editor-framework registered
+2019-05-15T12:22:57.072Z - success: protocol app registered
+2019-05-15T12:22:57.072Z - success: protocol theme registered
+2019-05-15T12:22:57.072Z - success: protocol packages registered
+2019-05-15T12:22:57.072Z - success: protocol uuid registerred
+2019-05-15T12:22:57.072Z - success: protocol db registerred
+2019-05-15T12:22:57.072Z - success: protocol thumbnail registerred
+2019-05-15T12:22:57.072Z - success: protocol unpack registerred
+2019-05-15T12:22:57.072Z - success: protocol disable-commonjs registerred
+2019-05-15T12:22:57.194Z - normal: connected!
+2019-05-15T12:22:57.196Z - normal: Check project G:\Cocos Project\start_project
+2019-05-15T12:22:57.198Z - normal: Initializing project G:\Cocos Project\start_project
+2019-05-15T12:22:57.801Z - normal: Initializing Cocos2d
+2019-05-15T12:22:59.134Z - normal: Initializing engine extends
+2019-05-15T12:22:59.167Z - success: asset-db-debugger loaded
+2019-05-15T12:22:59.169Z - success: baidu-adapter loaded
+2019-05-15T12:22:59.169Z - success: color-picker loaded
+2019-05-15T12:22:59.297Z - success: fb-audience-network loaded
+2019-05-15T12:22:59.371Z - success: fb-live-stream loaded
+2019-05-15T12:22:59.376Z - success: google-play-instant loaded
+2019-05-15T12:22:59.383Z - success: huawei-runtime loaded
+2019-05-15T12:22:59.384Z - success: jsb-adapter loaded
+2019-05-15T12:22:59.391Z - success: oppo-runtime loaded
+2019-05-15T12:22:59.401Z - success: package-manager loaded
+2019-05-15T12:22:59.573Z - success: qqplay-adapter loaded
+2019-05-15T12:22:59.575Z - success: runtime-dev-tools loaded
+2019-05-15T12:22:59.579Z - success: sdkbox loaded
+2019-05-15T12:22:59.583Z - success: tester loaded
+2019-05-15T12:22:59.586Z - success: ui-grid loaded
+2019-05-15T12:22:59.589Z - success: ui-kit-preview-extra loaded
+2019-05-15T12:22:59.591Z - success: ui-kit-preview loaded
+2019-05-15T12:22:59.593Z - success: ui-kit loaded
+2019-05-15T12:22:59.596Z - success: ui-tree loaded
+2019-05-15T12:22:59.602Z - success: vivo-runtime loaded
+2019-05-15T12:22:59.603Z - success: weapp-adapter loaded
+2019-05-15T12:22:59.668Z - success: assets loaded
+2019-05-15T12:22:59.671Z - success: builder loaded
+2019-05-15T12:23:00.064Z - success: cocos-services loaded
+2019-05-15T12:23:00.070Z - success: console loaded
+2019-05-15T12:23:00.117Z - success: fb-instant-games loaded
+2019-05-15T12:23:00.122Z - success: game-window loaded
+2019-05-15T12:23:00.123Z - success: google-instant-games loaded
+2019-05-15T12:23:00.129Z - success: hierarchy loaded
+2019-05-15T12:23:00.132Z - success: inspector loaded
+2019-05-15T12:23:00.133Z - success: keystore loaded
+2019-05-15T12:23:00.137Z - success: node-library loaded
+2019-05-15T12:23:00.139Z - success: package-asset loaded
+2019-05-15T12:23:00.140Z - success: preferences loaded
+2019-05-15T12:23:00.142Z - success: project-exporter loaded
+2019-05-15T12:23:00.145Z - success: project-importer loaded
+2019-05-15T12:23:00.154Z - success: project-settings loaded
+2019-05-15T12:23:00.159Z - success: scene loaded
+2019-05-15T12:23:00.162Z - success: simulator-debugger loaded
+2019-05-15T12:23:00.163Z - success: sprite-editor loaded
+2019-05-15T12:23:00.167Z - success: store loaded
+2019-05-15T12:23:00.172Z - success: timeline loaded
+2019-05-15T12:23:03.185Z - info: Cocos Services load base data!
+2019-05-15T12:23:12.964Z - normal: Loading packages
+2019-05-15T12:23:12.974Z - normal: Watching packages
+2019-05-15T12:23:13.444Z - normal: Run Application
+2019-05-15T12:23:24.233Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:23:24.237Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:57.344Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:57.357Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:57.793Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:57.796Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:58.451Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:58.453Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:58.792Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:58.796Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:59.846Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:24:59.850Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:00.234Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:00.236Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:00.589Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:00.593Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:00.965Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:00.979Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:01.423Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:01.426Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:01.755Z - warn: Please change the definition of property 'jumpAudio' in class 'Player'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:01.757Z - warn: Please change the definition of property 'pickAudio' in class 'Star'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    pickAudio: cc.Texture2D,
+If you use JS, it should be changed to:
+    pickAudio: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-05-15T12:25:02.724Z - info: shutdown preview server
