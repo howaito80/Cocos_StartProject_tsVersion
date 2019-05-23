@@ -33,6 +33,7 @@ var Game = /** @class */ (function (_super) {
         _this.player = null;
         _this.ground = null;
         _this.scoreLable = null;
+        _this.gameoverUI = null;
         _this.groundY = 0;
         _this.score = 0;
         return _this;
@@ -41,6 +42,9 @@ var Game = /** @class */ (function (_super) {
         this.groundY = this.ground.y + this.ground.height / 2;
     };
     Game.prototype.start = function () {
+        this.gameoverUI.active = false;
+        // bind listeners
+        this.player.bindEventListener(true);
         this.spawnNewStar();
     };
     // update (dt) {}
@@ -51,7 +55,11 @@ var Game = /** @class */ (function (_super) {
     };
     Game.prototype.loseStar = function () {
         this.player.node.stopAllActions();
-        //cc.director.loadScene('game');
+        this.player.bindEventListener(false);
+        this.gameoverUI.active = true;
+    };
+    Game.prototype.restartGame = function () {
+        cc.director.loadScene('game');
     };
     Game.prototype.spawnNewStar = function () {
         var newStar = cc.instantiate(this.starPref);
@@ -77,6 +85,9 @@ var Game = /** @class */ (function (_super) {
     __decorate([
         property(cc.Label)
     ], Game.prototype, "scoreLable", void 0);
+    __decorate([
+        property(cc.Node)
+    ], Game.prototype, "gameoverUI", void 0);
     Game = __decorate([
         ccclass
     ], Game);

@@ -18,6 +18,9 @@ export class Game extends cc.Component {
     @property(cc.Label)
     scoreLable: cc.Label = null;
 
+    @property(cc.Node)
+    gameoverUI: cc.Node = null;
+
     private groundY: number = 0;
     private score: number = 0;
 
@@ -28,6 +31,9 @@ export class Game extends cc.Component {
 
     start () 
     {
+        this.gameoverUI.active = false;
+        // bind listeners
+        this.player.bindEventListener(true);
         this.spawnNewStar();
     }
 
@@ -43,7 +49,13 @@ export class Game extends cc.Component {
     public loseStar()
     {
         this.player.node.stopAllActions();
-        //cc.director.loadScene('game');
+        this.player.bindEventListener(false);
+        this.gameoverUI.active = true;
+    }
+
+    public restartGame()
+    {
+        cc.director.loadScene('game');
     }
 
     private spawnNewStar()

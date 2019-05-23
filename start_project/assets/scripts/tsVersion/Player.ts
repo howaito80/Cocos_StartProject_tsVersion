@@ -23,23 +23,9 @@ export class Player extends cc.Component {
     private accRight: boolean = false;
     private jumpAction: cc.Action = null;
 
-    waitForSomething(ms: number)
-    {
-        console.log("please wait..")
-        return new Promise(resolve => setTimeout(resolve, ms))
-    }
-    async startDoingSomething()
-    {
-        await this.waitForSomething(5000);
-        console.info("Stop doing something");
-    }
-
     start () 
     {
 
-        this.startDoingSomething();
-        // bind listeners
-        this.bindEventListener(true);
         // jump action
         this.jumpAction = this.getJumpAction();
         this.node.runAction(this.jumpAction);
@@ -96,7 +82,7 @@ export class Player extends cc.Component {
         cc.audioEngine.play(this.jumpAudio, false, 1);
     }
 
-    private bindEventListener(status: boolean)
+    bindEventListener(status: boolean)
     {
         if(status)
         {
